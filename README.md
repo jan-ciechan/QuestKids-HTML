@@ -22,4 +22,4 @@ It's a fun little project where you can **pop the balloon as many times as you c
 3. Try to beat your own high score!
 
 ## ❤️ Credits
-Created by **JancieChan14** (11 years old and learning web development!)
+Created by **Jan Ciechan** (11 years old and learning web development!)
