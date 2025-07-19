@@ -3,7 +3,7 @@
 Welcome to **Quest Kids**, a simple single-page HTML game made by me! 🎮✨
 
 ## 🎯 Play the Game
-👉 **[Click here to play now!](https://janciechan14.github.io/QuestKids-HTML/)**
+👉 **[Click here to play now!](https://jan-ciechan.github.io/QuestKids-HTML/)**
 
 ## 📜 About the Game
 This is my first HTML game, created entirely in one file using plain HTML, CSS, and JavaScript.  
