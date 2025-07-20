@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    #board {
+      position: absolute;
+      width: 550px;
+      height: 450px;
+      background-color: lightgreen;
+    }
+    #bat {
+      position: absolute;
+      top: 420px;
+      width: 80px;
+      height: 20px;
+      background-color: blue;
+    }
+    #ball {
+      position: absolute;
+      width: 48px;
+      height: 48px;
+      border-radius: 24px;
+      background-color: yellow;
+    }
+  </style>
+  <body onmousemove="moveBat(event)">
+    <div id="board"></div>
+    <div id="bat"></div>
+    <div id="ball"></div>
+  </body>
+  <script>
+    var x = 100,
+      y = 100,
+      speedX = 2,
+      speedY = 2,
+      batX = 0;
+
+    function moveBat(event) {
+      console.log("Event: ", event);
+      console.log("ClientX: " + event.clientX);
+
+      var oldBatX = batX;
+
+      batX = event.clientX - 40;
+
+      console.log("oldBatX: " + oldBatX + " -> batX: " + batX);
+
+      bat.style.left = batX + "px";
+    }
+  </script>
+</html>
