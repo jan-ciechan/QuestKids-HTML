@@ -1,35 +1,40 @@
-<!doctype html>
-<html>
-<h1>Game created by Jan Ciechan</h1>
-<h2 id='scoreBox'><span>Try to click the balloon</span></h2>
-<style>
-	#balloon{position:absolute;
-		-webkit-transition:all 0.5s;
-		height:160px;}
-</style>
-<img id='balloon' src='https://pics.clipartpng.com/Red_Balloon_PNG_Clip_Art-2015.png'>
-<script>
-	balloon.addEventListener('click',clickedIt);
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quest Kids - Games</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+        h1 {
+            margin-top: 50px;
+        }
+        .game-link {
+            display: inline-block;
+            margin: 20px;
+            padding: 15px 30px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+        .game-link:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Jan's HTML Games!</h1>
+    <p>Choose a game to play:</p>
 
-	var score=0, count=0;
-
-	function clickedIt(){
-		score++;
-		scoreBox.innerHTML='score:'+score;
-		balloon.style.height='1px';
-	}
-
-	function moveIt(){
-		balloon.style.height='160px';
-		balloon.style.left=Math.random()*800+'px';
-		balloon.style.top=Math.random()*600+'px';
-		count++;
-		if(count==20){
-			alert('game over!');
-			clearInterval(timer);
-		}
-	}
-
-	var timer=setInterval(moveIt, 1000);
-</script>
+    <a href="pop.html" class="game-link">🎈 Pop the Balloon</a>
+    <a href="secondgame.html" class="game-link">🎮 Second Game (Coming Soon)</a>
+</body>
 </html>
